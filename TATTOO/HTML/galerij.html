@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoo Studio</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Forum&family=Rancho&family=Romanesco&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <a href="../HTML/index.html">
+            <img src="../IMG/logo.png" alt="logo" width="250" height="150">
+        </a>
+        
+        <ul class="navbar">
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/artists.html">Artisten</a></li>
+            <li><a href="../HTML/galerij.html">Galerij</a></li>
+            <li><a href="../HTML/nazorg.html">Nazorg</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/cadoubon.html">Cadeaubon</a></li>
+        </ul>
+    </header>
+
+    <h1>Galerij</h1>
+
+    <div class="gallery">
+        <img src="../IMG/anime.png" alt="anime" width="400" height="250" onclick="openModal('../IMG/anime.png')">
+<img src="../IMG/dreamcatcher.png" alt="dreamcatcher" width="400" height="250" onclick="openModal('../IMG/dreamcatcher.png')">
+<img src="../IMG/eye.png" alt="eye" width="400" height="250" onclick="openModal('../IMG/eye.png')">
+<img src="../IMG/spider.png" alt="spider" width="400" height="250" onclick="openModal('../IMG/spider.png')">
+<img src="../IMG/flowers.png" alt="flowers" width="400" height="250" onclick="openModal('../IMG/flowers.png')">
+<img src="../IMG/girl.png" alt="girl" width="400" height="250" onclick="openModal('../IMG/girl.png')">
+<img src="../IMG/owl.png" alt="owl" width="400" height="250" onclick="openModal('../IMG/owl.png')">
+<img src="../IMG/eagle.png" alt="eagle" width="400" height="250" onclick="openModal('../IMG/eagle.png')">
+
+<img src="../IMG/mini.png" alt="anime" width="400" height="250" onclick="openModal('../IMG/mini.png')">
+<img src="../IMG/mini1.png" alt="dreamcatcher" width="400" height="250" onclick="openModal('../IMG/mini1.png')">
+<img src="../IMG/mini2.png" alt="eye" width="400" height="250" onclick="openModal('../IMG/mini2.png')">
+<img src="../IMG/mini3.png" alt="spider" width="400" height="250" onclick="openModal('../IMG/mini3.png')">
+<img src="../IMG/mini5.png" alt="flowers" width="400" height="250" onclick="openModal('../IMG/mini5.png')">
+<img src="../IMG/mini6.png" alt="girl" width="400" height="250" onclick="openModal('../IMG/mini6.png')">
+<img src="../IMG/mini7.png" alt="owl" width="400" height="250" onclick="openModal('../IMG/mini7.png')">
+<img src="../IMG/eye1.png" alt="eagle" width="400" height="250" onclick="openModal('../IMG/eye1.png')">
+
+<img src="../IMG/dragon1.png" alt="dragon1" width="400" height="250" onclick="openModal('../IMG/dragon1.png')">
+<img src="../IMG/egipt.png" alt="egipt" width="400" height="250" onclick="openModal('../IMG/egipt.png')">
+<img src="../IMG/lion1.png" alt="lion1" width="400" height="250" onclick="openModal('../IMG/lion1.png')">
+<img src="../IMG/tiger.png" alt="tiger" width="400" height="250" onclick="openModal('../IMG/tiger.png')">
+<img src="../IMG/mask.png" alt="mask" width="400" height="250" onclick="openModal('../IMG/mask.png')">
+<img src="../IMG/portret.png" alt="portret" width="400" height="250" onclick="openModal('../IMG/portret.png')">
+<img src="../IMG/rottweiler.png" alt="rottweiler" width="400" height="250" onclick="openModal('../IMG/rottweiler.png')">
+<img src="../IMG/wolf.png" alt="wolf" width="400" height="250" onclick="openModal('../IMG/wolf.png')">
+<img src="../IMG/mechanics.png" alt="mechanics" width="400" height="250" onclick="openModal('../IMG/mechanics.png')">
+<img src="../IMG/samurai.png" alt="samurai" width="400" height="250" onclick="openModal('../IMG/samurai.png')">
+<img src="../IMG/viking.png" alt="viking" width="400" height="250" onclick="openModal('../IMG/viking.png')">
+<img src="../IMG/wings.png" alt="wings" width="400" height="250" onclick="openModal('../IMG/wings.png')">
+    </div>
+
+    <!-- Modale overlay -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+        <span class="next" onclick="plusSlides(1)">&#10095;</span>
+    </div>
+
+
+    <footer>
+    
+    <div class="links">
+        <a href="../HTML/privacy.html">Privacy policy</a>
+        <a href="../HTML/cookies.html">Cookies</a>
+        <a href="../HTML/voorwaarden.html">Algemene voorwaarden</a>
+    </div>
+        <p class="rechten">&copy: 2024 On The Run<br> Alle rechten voorbehouden</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("modalImg");
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+    </script>
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoo Studio</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Forum&family=Rancho&family=Romanesco&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oranienbaum&family=Rancho&family=Sriracha&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oranienbaum&family=Prosto+One&family=Quintessential&family=Rancho&family=Sriracha&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oranienbaum&family=Prosto+One&family=Quintessential&family=Rancho&family=Sriracha&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../HTML/index.html">
+            <img src="../IMG/logo.png" alt="logo" width="250" height="150">
+        </a>
+        
+        <ul class="navbar">
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/artists.html">Artisten</a></li>
+            <li><a href="../HTML/galerij.html">Galerij</a></li>
+            <li><a href="../HTML/nazorg.html">Nazorg</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/cadoubon.html">Cadeaubon</a></li>
+        </ul>
+    </header>
+
+    <h1>Portfolio Sofia</h1>
+    <div class="portret">
+<img src="../IMG/artist1.png" alt="artist1" width="1000" height="600">
+</div>
+
+<h2>Over mij</h2>
+<p>Ik ben 28 jaar en ik tattoeer van 2016</p>
+<p>Ik ben gespecialeseerd in <strong>realisme, blackwork, colorwork, illustratief</strong></p>
+<br>
+<h2>Mijn werk</h2>
+
+    <div class="portfolioo">
+<img src="../IMG/anime.png" alt="anime" width="400" height="250" onclick="openModal('../IMG/anime.png')">
+<img src="../IMG/dreamcatcher.png" alt="dreamcatcher" width="400" height="250" onclick="openModal('../IMG/dreamcatcher.png')">
+<img src="../IMG/eye.png" alt="eye" width="400" height="250" onclick="openModal('../IMG/eye.png')">
+<img src="../IMG/spider.png" alt="spider" width="400" height="250" onclick="openModal('../IMG/spider.png')">
+<img src="../IMG/flowers.png" alt="flowers" width="400" height="250" onclick="openModal('../IMG/flowers.png')">
+<img src="../IMG/girl.png" alt="girl" width="400" height="250" onclick="openModal('../IMG/girl.png')">
+<img src="../IMG/owl.png" alt="owl" width="400" height="250" onclick="openModal('../IMG/owl.png')">
+<img src="../IMG/eagle.png" alt="eagle" width="400" height="250" onclick="openModal('../IMG/eagle.png')">
+    </div>
+
+    <!-- Modale overlay -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+        <span class="next" onclick="plusSlides(1)">&#10095;</span>
+    </div>
+
+    <footer>
+    
+    <div class="links">
+        <a href="../HTML/privacy.html">Privacy policy</a>
+        <a href="../HTML/cookies.html">Cookies</a>
+        <a href="../HTML/voorwaarden.html">Algemene voorwaarden</a>
+    </div>
+        <p class="rechten">&copy: 2024 On The Run<br> Alle rechten voorbehouden</p>
+    </footer>
+
+    <script src="../JS/modal.js"></script>
+</body>
+</html>

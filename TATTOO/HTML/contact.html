@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoo Studio</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Forum&family=Rancho&family=Romanesco&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <a href="../HTML/index.html">
+            <img src="../IMG/logo.png" alt="logo" width="250" height="150">
+        </a>
+        
+        <ul class="navbar">
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/artists.html">Artisten</a></li>
+            <li><a href="../HTML/galerij.html">Galerij</a></li>
+            <li><a href="../HTML/nazorg.html">Nazorg</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/cadoubon.html">Cadeaubon</a></li>
+        </ul>
+    </header>
+
+    <h1>Maak een afspraak</h1>
+
+    <div class="container">
+        <div class="boox">
+            <h4>Openingsuren</h4>
+            <p>Maandag: 13:00 - 18:00</p>
+            <p>Dinsdag: 13:00 - 18:00</p>
+            <p>Woensdag: 13:00 - 18:00</p>
+            <p>Donderdag: 13:00 - 18:00</p>
+            <p>Vrijdag: 13:00 - 18:00</p>
+            <p>Zaterdag: 13:00 - 18:00</p>
+            <p>Zondag & feestdagen op afspraak</p>
+
+            <br>
+
+            <h4>Contact:</h4>
+            <p>info@ontherun.be</p>
+            <p>+32 489/532/816</p>
+            <p>kuriousstraat 187, 9000 Gent,<br>Belgie</p>
+        </div>
+        <div class="boox contact-form">
+            <h4>Contactformulier</h4>
+            <form>
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Telefoon:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="image">Afbeelding uploaden:</label>
+                <input type="file" id="image" name="image">
+                <input type="submit" value="Verstuur">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+    
+    <div class="links">
+        <a href="../HTML/privacy.html">Privacy policy</a>
+        <a href="../HTML/cookies.html">Cookies</a>
+        <a href="../HTML/voorwaarden.html">Algemene voorwaarden</a>
+    </div>
+        <p class="rechten">&copy: 2024 On The Run<br> Alle rechten voorbehouden</p>
+    </footer>
+
+    <script src="../JS/navbar.js"></script>
+</body>
+</html>
